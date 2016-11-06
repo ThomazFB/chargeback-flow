@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/chargeback_fragment_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/background_color"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/chargeback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/notice_title_text_vertical_margin"
+        android:textAllCaps="true"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/chargeback_title_text_size"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_field_line_separator_height"
+        android:background="@color/disabled_gray"/>
+
+    <LinearLayout
+        android:id="@+id/card_options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_options_layout_vertical_margin"
+            android:layout_marginEnd="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginStart="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginTop="@dimen/card_options_layout_vertical_margin"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/card_blocked_lock_icon"
+                android:layout_width="@dimen/card_blocked_lock_icon_dimen"
+                android:layout_height="@dimen/card_blocked_lock_icon_dimen"
+                android:layout_gravity="center_vertical|start"
+                android:layout_marginEnd="@dimen/card_blocked_lock_icon_end_margin"
+                android:src="@drawable/card_blocked_icon_selector"/>
+
+            <TextView
+                android:id="@+id/card_blocked_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_red"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_options_layout_vertical_margin"
+            android:layout_marginEnd="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginStart="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginTop="@dimen/card_options_layout_vertical_margin">
+
+            <TextView
+                android:id="@+id/chargeback_first_reason_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_black"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/chargeback_first_reason_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/close_gray"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/card_options_layout_vertical_margin"
+            android:layout_marginEnd="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginStart="@dimen/card_options_layout_horizontal_margin"
+            android:layout_marginTop="@dimen/card_options_layout_vertical_margin">
+
+            <TextView
+                android:id="@+id/chargeback_second_reason_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/text_black"
+                android:textStyle="bold"/>
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/chargeback_second_reason_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:backgroundTint="@color/close_gray"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_field_line_separator_height"
+            android:layout_marginTop="10dp"
+            android:background="@color/disabled_gray"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/chargeback_comment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:gravity="top|start"
+        android:padding="@dimen/comment_edit_text_padding"
+        android:textColor="@color/text_black"
+        android:textColorHint="@color/hint_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/chargeback_fragment_top_button_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/cancel_chargeback_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chargeback_button_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/cancel_chargeback_button_text"
+            android:textAllCaps="true"
+            android:textColor="@color/close_gray"
+            android:textSize="@dimen/button_default_text_size"/>
+
+        <TextView
+            android:id="@+id/submit_chargeback_button"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/chargeback_button_height"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/submit_chargeback_button_text"
+            android:textAllCaps="true"
+            android:textColor="@drawable/chargeback_fragment_button_color_selector"
+            android:textSize="@dimen/button_default_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

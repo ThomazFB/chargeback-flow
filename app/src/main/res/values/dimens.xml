@@ -1,0 +1,49 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="default_component_height">56dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="notice_description_line_spacing">6dp</dimen>
+    <dimen name="notice_description_text_horizontal_margin">20dp</dimen>
+    <dimen name="notice_description_text_vertical_margin">10dp</dimen>
+    <dimen name="notice_description_text_size">15sp</dimen>
+
+    <dimen name="notice_title_text_vertical_margin">25dp</dimen>
+    <dimen name="notice_title_text_size">25sp</dimen>
+
+    <dimen name="chargeback_title_text_size">17sp</dimen>
+
+    <dimen name="card_options_layout_horizontal_margin">15dp</dimen>
+    <dimen name="card_options_layout_vertical_margin">10dp</dimen>
+
+    <dimen name="card_blocked_lock_icon_end_margin">10dp</dimen>
+    <dimen name="card_blocked_lock_icon_dimen">25dp</dimen>
+
+    <dimen name="chargeback_fragment_bottom_button_margin">18dp</dimen>
+    <dimen name="chargeback_fragment_top_button_margin">5dp</dimen>
+    <dimen name="chargeback_fragment_horizontal_button_margin">16dp</dimen>
+
+    <dimen name="chargeback_button_height">50dp</dimen>
+
+    <dimen name="action_field_height">90dp</dimen>
+    <dimen name="action_field_line_separator_height">1dp</dimen>
+    <dimen name="action_continue_text_size">18sp</dimen>
+    <dimen name="action_cancel_text_size">15sp</dimen>
+
+    <dimen name="comment_edit_text_padding">15dp</dimen>
+
+    <dimen name="finish_title_text_horizontal_margin">40dp</dimen>
+    <dimen name="finish_title_text_vertical_margin">30dp</dimen>
+    <dimen name="finish_title_text_size">25sp</dimen>
+    <dimen name="finish_message_text_size">15sp</dimen>
+    <dimen name="finish_message_line_spacing">6dp</dimen>
+    <dimen name="finish_message_margin">18dp</dimen>
+    <dimen name="finish_close_button_margin">25dp</dimen>
+
+    <dimen name="button_default_text_size">15sp</dimen>
+    <dimen name="button_small_text_size">13sp</dimen>
+
+
+</resources>

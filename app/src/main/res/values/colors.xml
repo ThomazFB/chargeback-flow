@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">@color/title_purple</color>
+    <color name="colorAccent">#FFFFFF</color>
+
+    <color name="title_purple">#6E2B77</color>
+    <color name="text_black">#222222</color>
+    <color name="text_green">#417505</color>
+    <color name="text_red">#D5171B</color>
+    <color name="close_gray">#808191</color>
+    <color name="disabled_gray">#CCCCCC</color>
+    <color name="enabled_purple">#6E2B77</color>
+    <color name="hint_color">#999999</color>
+    <color name="background_color">#FDFDFD</color>
+</resources>

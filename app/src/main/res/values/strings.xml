@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Chargeback</string>
+    <string name="developer_id">por Thomaz F B Cortez</string>
+    <string name="charge_activity_start_chargeback_button_text">Contestar compra</string>
+    <string name="charge_activity_loading_dialog_content">Carregando</string>
+
+    <!-- Chargeback Fragment Resource -->
+    <string name="card_unblocked_text">Cartão desbloqueado, recomendamos mantê-lo bloqueado</string>
+    <string name="card_blocked_text">Bloqueamos preventivamente o seu cartão</string>
+    <string name="cancel_chargeback_button_text">Cancelar</string>
+    <string name="submit_chargeback_button_text">Contestar</string>
+
+    <!-- Finish Fragment Resources -->
+    <string name="finish_title_text">Contestação de compra recebida</string>
+    <string name="finish_message_text">Fique de olho no seu email! Nos próximos 3 dias você deverá receber um primeiro retorno sobre sua contestação.</string>
+    <string name="finish_close_button_text">Fechar</string>
+
+    <!-- Error Messages Resources -->
+    <string name="no_connection_error">Parece que você está sem internet! Por favor, verifique a sua conexão e tente novamente.</string>
+    <string name="api_data_error">Oops, um problema ocorreu e não foi possível completar a operação, por favor tente novamente.</string>
+
+    <!-- Connection Resources -->
+    <string name="api_endpoint">no-longer-supported-url</string>
+</resources>

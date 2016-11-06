@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/charge_activity_root"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color"
+                tools:context=".android.activity.ChargeActivity">
+
+    <Button
+        android:id="@+id/start_chargeback_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_component_height"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:backgroundTint="@color/background_color"
+        android:onClick="onChargeBackButtonClick"
+        android:text="@string/charge_activity_start_chargeback_button_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/md_title_frame_margin_bottom"
+        android:layout_toStartOf="@+id/solaire_icon"
+        android:text="@string/developer_id"
+        android:textColor="@color/close_gray"
+        android:textSize="@dimen/chargeback_title_text_size"/>
+
+    <ImageView
+        android:id="@+id/solaire_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/solaire_icon"/>
+
+</RelativeLayout>
